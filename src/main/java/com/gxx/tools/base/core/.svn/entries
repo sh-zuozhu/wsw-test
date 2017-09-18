@@ -1,0 +1,28 @@
+10
+
+dir
+0
+http://gxx@121.43.104.34/svn/gxx/trunk/tools/src/main/java/com/gxx/tools/base/core
+http://gxx@121.43.104.34/svn/gxx
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9f2b9990-a19a-439c-92e3-b53827c81404
+

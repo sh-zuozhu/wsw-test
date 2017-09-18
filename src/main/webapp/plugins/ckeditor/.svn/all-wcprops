@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor
+END
+ckeditor.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/ckeditor.js
+END
+CHANGES.md
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/CHANGES.md
+END
+LICENSE.md
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/LICENSE.md
+END
+styles.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/styles.js
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/config.js
+END
+build-config.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/build-config.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/README.md
+END
+contents.css
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/gxx/!svn/ver/305/trunk/config_center/src/main/webapp/plugins/ckeditor/contents.css
+END

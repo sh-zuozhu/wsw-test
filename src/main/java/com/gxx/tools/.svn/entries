@@ -1,0 +1,40 @@
+10
+
+dir
+387
+http://gxx@121.43.104.34/svn/gxx/trunk/tools/src/main/java/com/gxx/tools
+http://gxx@121.43.104.34/svn/gxx
+
+
+
+2017-09-14T06:57:11.230731Z
+387
+gxx
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9f2b9990-a19a-439c-92e3-b53827c81404
+
+base
+dir
+
+dto
+dir
+
+service
+dir
+
+web
+dir
+

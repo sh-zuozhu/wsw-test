@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gxx/!svn/ver/384/trunk/tools/src/main/webapp/WEB-INF/ftl/user
+END
+preRegistFtl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gxx/!svn/ver/384/trunk/tools/src/main/webapp/WEB-INF/ftl/user/preRegistFtl.ftl
+END
+preRegistJsp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gxx/!svn/ver/384/trunk/tools/src/main/webapp/WEB-INF/ftl/user/preRegistJsp.jsp
+END
+result.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gxx/!svn/ver/384/trunk/tools/src/main/webapp/WEB-INF/ftl/user/result.ftl
+END

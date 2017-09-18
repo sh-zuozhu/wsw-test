@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxx.tools.base.dao.GenDbDocRequestMapper" >
+  <resultMap id="BaseResultMap" type="com.gxx.tools.base.vo.GenDbDocRequest" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="sys_date" property="sysDate" jdbcType="VARCHAR" />
+    <result column="sys_time" property="sysTime" jdbcType="VARCHAR" />
+    <result column="nick_name" property="nickName" jdbcType="VARCHAR" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="database_name" property="databaseName" jdbcType="VARCHAR" />
+    <result column="file_route" property="fileRoute" jdbcType="VARCHAR" />
+    <result column="file_url" property="fileUrl" jdbcType="VARCHAR" />
+    <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
+    <result column="created_at" property="createdAt" jdbcType="TIMESTAMP" />
+    <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, sys_date, sys_time, nick_name, ip, database_name, file_route, file_url, is_delete, 
+    created_at, updated_at
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from gen_db_doc_request
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from gen_db_doc_request
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gxx.tools.base.vo.GenDbDocRequest" >
+    insert into gen_db_doc_request (id, sys_date, sys_time, 
+      nick_name, ip, database_name, 
+      file_route, file_url, is_delete, 
+      created_at, updated_at)
+    values (#{id,jdbcType=INTEGER}, #{sysDate,jdbcType=VARCHAR}, #{sysTime,jdbcType=VARCHAR}, 
+      #{nickName,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, #{databaseName,jdbcType=VARCHAR}, 
+      #{fileRoute,jdbcType=VARCHAR}, #{fileUrl,jdbcType=VARCHAR}, #{isDelete,jdbcType=INTEGER}, 
+      #{createdAt,jdbcType=TIMESTAMP}, #{updatedAt,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gxx.tools.base.vo.GenDbDocRequest" >
+    insert into gen_db_doc_request
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="sysDate != null" >
+        sys_date,
+      </if>
+      <if test="sysTime != null" >
+        sys_time,
+      </if>
+      <if test="nickName != null" >
+        nick_name,
+      </if>
+      <if test="ip != null" >
+        ip,
+      </if>
+      <if test="databaseName != null" >
+        database_name,
+      </if>
+      <if test="fileRoute != null" >
+        file_route,
+      </if>
+      <if test="fileUrl != null" >
+        file_url,
+      </if>
+      <if test="isDelete != null" >
+        is_delete,
+      </if>
+      <if test="createdAt != null" >
+        created_at,
+      </if>
+      <if test="updatedAt != null" >
+        updated_at,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="sysDate != null" >
+        #{sysDate,jdbcType=VARCHAR},
+      </if>
+      <if test="sysTime != null" >
+        #{sysTime,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null" >
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="ip != null" >
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="databaseName != null" >
+        #{databaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileRoute != null" >
+        #{fileRoute,jdbcType=VARCHAR},
+      </if>
+      <if test="fileUrl != null" >
+        #{fileUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDelete != null" >
+        #{isDelete,jdbcType=INTEGER},
+      </if>
+      <if test="createdAt != null" >
+        #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null" >
+        #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gxx.tools.base.vo.GenDbDocRequest" >
+    update gen_db_doc_request
+    <set >
+      <if test="sysDate != null" >
+        sys_date = #{sysDate,jdbcType=VARCHAR},
+      </if>
+      <if test="sysTime != null" >
+        sys_time = #{sysTime,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null" >
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="ip != null" >
+        ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="databaseName != null" >
+        database_name = #{databaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileRoute != null" >
+        file_route = #{fileRoute,jdbcType=VARCHAR},
+      </if>
+      <if test="fileUrl != null" >
+        file_url = #{fileUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDelete != null" >
+        is_delete = #{isDelete,jdbcType=INTEGER},
+      </if>
+      <if test="createdAt != null" >
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null" >
+        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gxx.tools.base.vo.GenDbDocRequest" >
+    update gen_db_doc_request
+    set sys_date = #{sysDate,jdbcType=VARCHAR},
+      sys_time = #{sysTime,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      ip = #{ip,jdbcType=VARCHAR},
+      database_name = #{databaseName,jdbcType=VARCHAR},
+      file_route = #{fileRoute,jdbcType=VARCHAR},
+      file_url = #{fileUrl,jdbcType=VARCHAR},
+      is_delete = #{isDelete,jdbcType=INTEGER},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
